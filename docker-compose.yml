@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+    postgres:
+        container_name: test
+        environment:
+            - POSTGRES_PASSWORD=passdb
+            - POSTGRES_USER=userdb
+            - POSTGRES_DB=namedb
+        ports:
+            - '5432:5432'
+        volumes:
+            - '$HOME/docker/volumes/postgres:/var/lib/postgresql/data'
+        image: 'postgres:9.6'

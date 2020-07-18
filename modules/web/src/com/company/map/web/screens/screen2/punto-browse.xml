@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://browseCaption"
+        class="com.company.map.web.screens.screen2.PuntoBrowse"
+        focusComponent="puntoesTable"
+        lookupComponent="puntoesTable"
+        messagesPack="com.company.map.web.screens.screen2">
+    <dsContext>
+        <groupDatasource id="puntoesDs"
+                         class="com.company.map.entity.Punto"
+                         view="_local">
+            <query>
+                <![CDATA[select e from map_Punto e]]>
+            </query>
+        </groupDatasource>
+    </dsContext>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="puntoesTable"
+            spacing="true">
+        <vbox id="mapContainer" align="TOP_RIGHT" width="100%" height="370px" responsive="true"></vbox>
+        <filter id="filter"
+                applyTo="puntoesTable"
+                datasource="puntoesDs">
+            <properties include=".*"/>
+        </filter>
+        <groupTable id="puntoesTable"
+                    width="100%">
+            <actions>
+                <action id="create"
+                        openType="NEW_TAB"/>
+                <action id="edit"
+                        openType="NEW_TAB"/>
+                <action id="remove"/>
+                <action id="refresh"/>
+            </actions>
+            <columns>
+                <column id="latitud"/>
+                <column id="longitud"/>
+                <column id="color"/>
+                <column id="nivel"/>
+            </columns>
+            <rows datasource="puntoesDs"/>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+                <button id="createBtn" action="puntoesTable.create"/>
+                <button id="editBtn" action="puntoesTable.edit"/>
+                <button id="removeBtn" action="puntoesTable.remove"/>
+                <button id="refreshBtn" action="puntoesTable.refresh"/>
+            </buttonsPanel>
+        </groupTable>
+    </layout>
+</window>

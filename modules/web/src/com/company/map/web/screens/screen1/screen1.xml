@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.company.map.web.screens.screen1.Screen1"
+        messagesPack="com.company.map.web.screens.screen1"
+        caption="msg://caption">
+
+    <layout expand="mapContainer" spacing="true">
+        <hbox spacing="true" align="MIDDLE_CENTER" width="100%">
+
+        </hbox>
+        <vbox id="mapContainer" width="100%"></vbox>
+    </layout>
+
+
+</window>
