@@ -32,7 +32,10 @@ En la opción Cuba-> Main Data Storage Settings, ingresar parámetros de la bd a
 Finalmente ejecutar aplicación.
 
 ## Screen 1
+![1](https://user-images.githubusercontent.com/33637622/87863548-09e47d00-c92a-11ea-8b8d-de6302a35a84.gif)
 
 ## Screen 2
+![2](https://user-images.githubusercontent.com/33637622/87863552-17016c00-c92a-11ea-8894-097e131b0ab8.gif)
 
 ## Screen 3
+![3](https://user-images.githubusercontent.com/33637622/87863570-36989480-c92a-11ea-8510-2bce88404e50.gif)
