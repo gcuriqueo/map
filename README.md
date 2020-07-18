@@ -29,7 +29,7 @@ docker-compose up && docker-compose rm -fsv
 En la opción Cuba-> Main Data Storage Settings, ingresar parámetros de la bd antes mencionados en el archivo docker-compose.
 
 <img src="image/img1.png">
-Finalmente ejecutar aplicación.
+Finalmente ejecutar aplicación e ingresar a [http://localhost:8080/app](http://localhost:8080/app/).
 
 ## Screen 1
 ![1](https://user-images.githubusercontent.com/33637622/87863548-09e47d00-c92a-11ea-8b8d-de6302a35a84.gif)
