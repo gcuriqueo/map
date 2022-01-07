@@ -3,7 +3,7 @@
 El presente proyecto está desarrollado en Java RAD framework  [Cuba Platform](https://www.cuba-platform.com/) y con el complemento [v-leaflet](https://vaadin.com/directory/component/v-leaflet) de vaadin.
 
 ## Inicializar base de datos con docker
-Se ocupa postgres como gestor de base de datos. Se adjunta el archivo docker-compose.yml, en el cual se setean los datos de la db, para luego conectar con el proyecto.
+Se ocupa postgreSQL como gestor de base de datos. Se adjunta el archivo docker-compose.yml, en el cual se setean los datos de la db, para luego conectar con el proyecto.
 
 ```
 version: '3.3'
